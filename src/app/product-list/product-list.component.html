@@ -1,0 +1,24 @@
+<div *ngFor="let product of products; index as productId">
+<table style="width:100%" align="center">
+
+<tr align="center">
+<th><h3 align="center">Out now!!!</h3></th>
+</tr>
+
+<tr align="center">
+<td><a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Issue7.png"></a></td>
+</tr>
+
+<tr align="center">
+<td><p *ngIf="product.description">{{ product.description }}</p></td>
+</tr>
+
+</table>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

@@ -1,0 +1,50 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+<h2>We would like to from you</h2>
+<p><label for="Cname"> Our contact details</label>Raspers Media (PTY) LTD No: 302, Upper Deck, Corporate Place Mbabane <label for="email">Email :</label> ntokozo@raspermedia.com <label for="cell">Cell :</label> +268 7661 8219 / 7675 657</p>
+
+
+<div>
+    <label for="nameandsurname">
+      Name
+    </label>
+    <input id="nameandsurname" type="text" [formControl]="nameandsurname" required>
+</div>
+
+<div>
+    <label for="Cname">
+      Company Name(If applicable)
+    </label>
+    <input id="Cname" type="text" formControlName="Cname">
+</div>
+
+<div>
+    <label for="Tnumber">
+Tel Number
+ </label>
+    <input id="Tnumber" type="text" formControlName="Tnumber">
+</div>
+
+<div>
+    <label for="Cnumber">
+Cell Number
+ </label>
+    <input id="Cnumber" type="text" formControlName="Cnumber" required>
+</div>
+
+<div>
+    <label for="Eaddress">
+      Email Address
+    </label>
+    <input id="Eaddress" type="text" formControlName="Eaddress">
+</div>
+<div>
+    <label for="Info">
+      Questions/Compliments/Complaints
+    </label>
+    <input id="Info" type="text" formControlName="Info">
+</div>
+
+  <button class="button" type="submit">Submit</button>
+
+</form>

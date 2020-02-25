@@ -1,0 +1,52 @@
+
+<div *ngFor="let product of products; index as productId">
+<table style="width:100%" align="center">
+
+<tr align="center">
+<th><h3 align="center">Out now!!!</h3></th>
+</tr>
+
+<tr align="center">
+<td><a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Issue7.png"></a></td>
+</tr>
+
+<tr align="center">
+<td><p *ngIf="product.description">{{ product.description }}</p></td>
+</tr>
+
+</table>
+</div> 
+ 
+
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <!--<div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>-->
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <!--<div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>-->
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide">
+     <!-- <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>-->
+    </ng-template>
+  </ngb-carousel>
+
+  <h3 align="center">Commercial News!!!</h3>
+<td><a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Comm1.jpg"></a></td>
+
+  <h3 align="center">Residential News!!!!</h3>
+  <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Secttitle1.jpg"></a>
