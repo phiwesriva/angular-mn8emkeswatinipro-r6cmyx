@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdvertComponent } from './advert/advert.component';
+import { PodcastComponent } from './podcast/podcast.component';
 
 @NgModule({
   imports: [
@@ -44,7 +46,9 @@ import { ContactComponent } from './contact/contact.component';
     SubscComponent,
     ShippingComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    AdvertComponent,
+    PodcastComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
