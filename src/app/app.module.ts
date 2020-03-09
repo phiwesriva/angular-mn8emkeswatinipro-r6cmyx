@@ -34,6 +34,8 @@ import { PodcastComponent } from './podcast/podcast.component';
       { path: 'shipping', component: ShippingComponent },
       { path: 'news', component: NewsComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'podcast', component: PodcastComponent },
+      { path: 'advert', component: AdvertComponent },
     ])
   ],
   declarations: [
