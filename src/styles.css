@@ -12,14 +12,14 @@ body {
   margin: 0;
 }
 
-#table1 {
+/*#table1 {
   border-collapse: separate;
   border-spacing: 15px;
 }
 
-th, td {
-  padding: 15px;
-}
+ th, td {*/
+ /* padding: 15px;*/
+/*}*/
 
 img {
   max-width: 100%;
